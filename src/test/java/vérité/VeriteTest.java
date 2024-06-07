@@ -11,4 +11,10 @@ public class VeriteTest {
         Verite verite = new Verite("Lou est beau");
         Assertions.assertTrue(verite.isStatut());
     }
+
+    @Test
+    public void verifier_verite_chaine_de_caractere(){
+        Verite verite = new Verite("Lou est beau");
+        Assertions.assertEquals("vraie",verite.estVraie());
+    }
 }

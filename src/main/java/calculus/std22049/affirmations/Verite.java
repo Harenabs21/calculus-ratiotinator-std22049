@@ -9,4 +9,7 @@ public final class Verite extends Affirmation {
         super(phrase);
         this.statut = true;
     }
+    public String estVraie() {
+        return  "vraie" ;
+    }
 }
