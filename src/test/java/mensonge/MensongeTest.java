@@ -11,4 +11,11 @@ public class MensongeTest {
         Mensonge mensonge =  new Mensonge("Lou est pauvre");
         Assertions.assertFalse(mensonge.isStatut());
     }
+
+    @Test
+    public void mensonge_fausse_chaine_de_caractere(){
+        Mensonge mensonge = new Mensonge("je suis intelligent");
+
+        Assertions.assertEquals("fausse",mensonge.estFausse());
+    }
 }

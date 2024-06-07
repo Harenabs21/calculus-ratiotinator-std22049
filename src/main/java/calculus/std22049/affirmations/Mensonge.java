@@ -11,4 +11,7 @@ public final class Mensonge extends Affirmation {
         super(phrase);
         this.statut = false;
     }
+    public String estFausse(){
+        return "fausse";
+    }
 }
