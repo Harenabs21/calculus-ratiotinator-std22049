@@ -2,14 +2,16 @@ package calculus.std22049.affirmations;
 
 import lombok.Getter;
 
+import static calculus.std22049.affirmations.ValeurDeVerite.vraie;
+
 @Getter
 public final class Verite extends Affirmation {
-    private boolean statut;
     public Verite(String phrase) {
         super(phrase);
-        this.statut = true;
     }
-    public String estVraie() {
-        return  "vraie" ;
+
+    @Override
+    public ValeurDeVerite valeurDeVerite() {
+        return vraie;
     }
 }
