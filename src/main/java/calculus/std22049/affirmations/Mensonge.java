@@ -3,15 +3,17 @@ package calculus.std22049.affirmations;
 
 import lombok.Getter;
 
+import static calculus.std22049.affirmations.ValeurDeVerite.faux;
+
 @Getter
 public final class Mensonge extends Affirmation {
-    private boolean statut;
 
-    public Mensonge(String phrase){
+    public Mensonge(String phrase) {
         super(phrase);
-        this.statut = false;
     }
-    public String estFausse(){
-        return "fausse";
+
+    @Override
+    public ValeurDeVerite valeurDeVerite() {
+        return faux;
     }
 }
